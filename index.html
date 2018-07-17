@@ -1,0 +1,126 @@
+<!--
+NAME: MANPREET KAUR
+STUDENT NUMBER: 991451849
+DATE CREATED: 2018-04-10
+DATE UPDATED: 2018-04-10
+DESCRIPTION: JSON data retrieval and local storage.
+
+-->
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/jquery.mobile.css">
+	<link rel="stylesheet" href="css/mystyle.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<script src="js/myscript.js"></script>
+
+<style>
+	body { font-size: 1.5em; }
+	.labelp {background: bisque;}
+	.datap {background: teal; color: white;}
+</style>
+	
+</head>
+
+<body>
+
+	<div id="mainPage" data-role="page">
+		<header data-role="header">
+			<a href="#myPanel" class="ui-btn">Weather</a>
+			<h2><span class="title"></span></h2>
+			
+		</header>
+		<section id="pageData" class="ui-content" role="main"> 
+			
+		</section>
+		<footer id="bottom" data-role="footer">
+	
+		</footer>	
+		<div data-role="panel"id="myPanel">
+		</div>
+	</div>
+	
+	<div id="popupPageForAbout" data-role="popup">
+		
+	</div>
+	
+	<div id="popupPageForWind" data-role="popup">
+		
+	</div>
+	<div id="popupPageForAtmosphere" data-role="popup">
+		
+	</div>
+	<div id="popupPageForAstronomy" data-role="popup">
+		
+	</div>
+	<div id="newPage" data-role="page">
+		<header data-role="header">
+			
+			<h2><span class="title">Forecast</span></h2>
+			
+		</header>
+		<section id="pageData2" class="ui-content" role="main"> 
+			<div id="data2" data-role="collapsible-set"> </div>
+		</section>
+		<footer id="bottom" data-role="footer">
+	
+		</footer>	
+		
+	</div>
+	
+	<div id="dataEntryPage" data-role="page">
+		<header data-role="header">
+			
+			<h2><span class="title">Data Entry</span></h2>
+			
+		</header>
+		<section id="pageData3" class="ui-content" role="main"> 
+		
+			
+					<p> <em>Email:</em> <br> 
+						<input type="text" name="uEmail" id="uEmail" value="kaur2615@sheridanc.on.ca" style="width:100%;"> </p>
+						
+				<p>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<legend><em>City:</em></legend>
+				<input type="radio" name="city" id="toronto" value="Toronto" checked> <label for="toronto">Toronto</label>
+						<input type="radio" name="city" id="brampton" value="Brampton">
+					<label for="brampton">Brampton</label>
+						<input type="radio" name="city" id="oakville" value="Oakville">
+					<label for="oakville">Oakville</label> 
+				</fieldset>
+				</p> <br>
+				<label>Comments / Questions </label>
+				<textarea id="uComment" rows="6" columns="50"> 
+				</textarea>
+				<input type="submit" id="submitButton" value="Submit" >
+				<a href="#mainPage" class="ui-btn ui-icon-back ui-btn-icon-right"> Back </a>
+		</section>
+		
+		<footer id="bottom" data-role="footer">
+	
+		</footer>	
+		
+	</div>
+	
+	<div id="dataRetrievalPage" data-role="page">
+		<header data-role="header">
+			
+			<h2><span class="title">Data</span></h2>
+			
+		</header>
+		<section id="pageData4" class="ui-content" role="main"> 
+			<div id='retrievedContent'></div>
+		</section>
+		<footer id="bottom" data-role="footer">
+	
+		</footer>	
+		<div data-role="panel"id="myPanel">
+		</div>
+	</div>
+
+</body>
+</html>

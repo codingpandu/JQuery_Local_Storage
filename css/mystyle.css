@@ -1,0 +1,39 @@
+.ui-icon-about:after {
+			background-image: url("images/about.png");
+			background-size: 25px 25px;
+		}
+.ui-icon-other:after {
+			background-image: url("images/other.png");
+			background-size: 25px 25px;
+		}
+.ui-icon-forecastIcon:after {
+			background-image: url("images/forecastIcon.jpg");
+			background-size: 25px 25px;
+		}
+.ui-icon-deIcon:after {
+			background-image: url("images/deIcon.png");
+			background-size: 25px 25px;
+		}
+.ui-icon-dIcon:after {
+			background-image: url("images/dIcon.png");
+			background-size: 25px 25px;
+		}
+
+.ui-icon-wind:after {
+			background-image: url("images/wind.png");
+			background-size: 25px 25px;
+		}
+		.ui-icon-atmosphere:after {
+			background-image: url("images/atmosphere.jpg");
+			background-size: 25px 25px;
+		}
+		.ui-icon-astronomy:after {
+			background-image: url("images/astronomy.png");
+			background-size: 25px 25px;
+		}
+		
+		
+		
+#footerList li{
+	display:inline;
+}
